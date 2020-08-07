@@ -59,7 +59,7 @@ Now you have an application with redirect URLs, client id and client secret. We 
     Request example:
 
     ```http
-    POST https://oauth.kyc-crypto.com/api/v1.0/clients HTTP/1.1
+    POST https://oauth.kyc-crypto.com/api/v1.0/clients/users HTTP/1.1
     Content-Type: application/json
     Authorization: JWTtoken
 
