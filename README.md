@@ -5,7 +5,7 @@
 # Description
 **Note: To use this service, a user must be KYC verified on [KYC.Crypto DeFi](https://my.kyc-crypto.com).**
 
-Once the KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com), follow the instructions to implement button on your website, use API to get basic user information as well as login to different websites with power of decentralization and KYC verified identity.
+Once the KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com), follow the instructions to implement LoginCrypto button on your website, use API to get basic user information as well as login to different websites with power of decentralization and KYC verified identity.
 
 ## Getting Started
 
@@ -21,7 +21,7 @@ Once the KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com
 
 ![Login.Crypto Apps](./apps.png)
 
-3. Upon successfull login, you will see applications page. You won't see aplications like image above right away. You will have to create an app.
+3. Upon successfull login, you will see applications page. You won't see applications like image above right away. You will have to create an app.
 
 ![Login.Crypto Apps](./createApp.png)
 
@@ -39,13 +39,13 @@ Once the app is created, you will be able to see it in the applications list.
 
 Now you have an application with redirect URLs, client id and client secret. We need to use these as credentials to get user's basic information.
 
-1. Create a button on your website with this url: http://signin.kyc-crypto.com/#/authorize?email=**email_id_used_in_application**&clientId=**clientId_from_application**&redirectUri=**redirectUri_from_application**
+1. Create a button on your website with this url: http://signin.kyc-crypto.com/#/authorize?email=email_id_used_in_application&clientId=clientId_from_application&redirectUri=redirectUri_from_application
 
     - Example URL: http://signin.kyc-crypto.com/#/authorize?abcd@gmail.com&clientId=cid123456&redirectUri=http://localhost/callback
 
 **Note: URL must be urlencoded**
 
-2. Your button is ready to be used in your website!
+2. LoginCrypto Button is ready to be used in your website!
 
 ## Getting user's basic information
 
@@ -54,6 +54,7 @@ Now you have an application with redirect URLs, client id and client secret. We 
 2. When user give access to basic information then authorization page will redirect to a redirect URL provided by you with a JWT token.
 
 3. You need to make a POST request with JWT token and an application secret to get user's information
+    **Note: Make this POST request from your backend only. Else your secret will be exposed to the public**
 
     Request example:
 
@@ -67,4 +68,4 @@ Now you have an application with redirect URLs, client id and client secret. We 
     }
     ```
 
-    You will get user information back in the response.
+    You will get the user information back in the response.
