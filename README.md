@@ -3,7 +3,7 @@
 ![Login.Crypto](./logo.png)
 
 # Description
-**Note: To use this API, a user must be KYC verified on [KYC.Crypto DeFi](https://my.kyc-crypto.com) as a party or as a government.**
+**Note: To use this service, a user must be KYC verified on [KYC.Crypto DeFi](https://my.kyc-crypto.com).**
 
 Once the KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com), follow the instructions to implement button on your website, use API to get basic user information as well as login to different websites with power of decentralization and KYC verified identity.
 
