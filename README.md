@@ -39,9 +39,9 @@ Once the app is created, you will be able to see it in the applications list.
 
 Now you have an application with redirect URLs, client id and client secret. We need to use these as credentials to get user's basic information.
 
-1. Create a button on your website with this url: http://signin.kyc-crypto.com/#/authorize?email=email_id_used_in_application&clientId=clientId_from_application&redirectUri=redirectUri_from_application
+1. Create a button on your website with this url: http://signin.kyc-crypto.com/#/authorize?trxAddress=kyc_verified_trxAddress&clientId=clientId_from_application&redirectUri=redirectUri_from_application
 
-    - Example URL: http://signin.kyc-crypto.com/#/authorize?abcd@gmail.com&clientId=cid123456&redirectUri=http://localhost/callback
+    - Example URL: http://signin.kyc-crypto.com/#/authorize?trxAddress=TXjM7BjGhqv16iR8zM9z73i4GYGX14m7gj&clientId=cid123456&redirectUri=http://localhost/callback
 
 **Note: URL must be urlencoded**
 
